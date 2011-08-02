@@ -1,0 +1,39 @@
+
+[Desktop Entry]
+Version=1.0
+Name=Faccialibro
+Comment=Facebook notify in Unity
+Exec="/home/mirko/.faccialibro/faccialibro.sh" %u
+Terminal=false
+X-MultipleArgs=true
+MimeType=image/bmp;image/gif;image/jpeg;image/jpg;image/png;
+Type=Application
+Icon=/home/mirko/.faccialibro/facebook.png
+Categories=Network;WebBrowser;
+X-Ayatana-Desktop-Shortcuts=SelAlbum;Notifications;Messages;Friends
+Name[it_IT]=Faccialibro
+Comment[it_IT]=Notifiche di Facebook su Unity
+
+[SelAlbum Shortcut Group]
+Name=Select an Album
+Exec="/home/mirko/.faccialibro/faccialibro.sh" setAlbum
+TargetEnvironment=Unity
+Name[it_IT]=Seleziona un album
+
+[Notifications Shortcut Group]
+Name=Notifications
+Exec=ndg-open 'http://www.facebook.com/notifications.php'
+TargetEnvironment=Unity
+Name[it_IT]=Notifiche
+
+[Messages Shortcut Group]
+Name=Messages
+Exec=xdg-open 'http://www.facebook.com/?sk=messages'
+TargetEnvironment=Unity
+Name[it_IT]=Messaggi
+
+[Friends Shortcut Group]
+Name=Friends
+Exec=xdg-open 'http://www.facebook.com/friends/edit/'
+TargetEnvironment=Unity
+Name[it_IT]=Amici
